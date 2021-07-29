@@ -1,0 +1,60 @@
+body {
+    background-image: radial-gradient(hsl(228, 56%, 29%),hsl(228, 45%, 44%));
+    /* height: 100vh; */
+}
+
+.winner-box {
+    margin: 5vh 5rem;
+    border: 5px solid white;
+    border-radius: 5px;
+    padding: 2.5rem;
+    color: whitesmoke;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.select {
+    display: flex;
+}
+.select__container {
+    padding: 4vh;
+    border: 7.5px solid white;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 2rem;
+}
+
+.pick {
+    width: 5rem;
+    height: 5rem;
+    padding: 1rem;
+    border-radius: 50%;
+    border: 10px solid red;
+    background-color: white;
+    margin: 0 2rem;
+    cursor: pointer;
+}
+.pick--inactive {
+    filter: brightness(50%);
+}
+
+.pick--active {
+    filter: brightness(2);
+}
+
+.pick:hover {
+    transform: translateY(-2px);
+}
+
+.pick:active {
+    transform: unset;
+    filter: brightness(2);
+}
+
+#rock {
+    border-color: blue;
+}
+
+#paper {
+    border-color: yellow;
+}
